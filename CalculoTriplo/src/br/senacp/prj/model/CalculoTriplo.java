@@ -1,4 +1,4 @@
-package triplo;
+package br.senacp.prj.model;
 
 public class CalculoTriplo {
     

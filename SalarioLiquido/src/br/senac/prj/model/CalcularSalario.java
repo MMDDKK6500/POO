@@ -1,4 +1,4 @@
-package salarioliquido;
+package br.senac.prj.model;
 
 public class CalcularSalario {
     

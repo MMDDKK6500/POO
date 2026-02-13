@@ -1,5 +1,6 @@
-package salarioliquido;
+package br.senac.prj.view;
 
+import br.senac.prj.model.CalcularSalario;
 import java.util.Scanner;
 
 public class Principal {

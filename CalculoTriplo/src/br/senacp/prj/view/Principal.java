@@ -1,5 +1,6 @@
-package triplo;
+package br.senacp.prj.view;
 
+import br.senacp.prj.model.CalculoTriplo;
 import java.util.Scanner;
 
 public class Principal {

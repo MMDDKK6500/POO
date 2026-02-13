@@ -1,4 +1,4 @@
-package dobro;
+package br.senac.prj.model;
 
 public class CalculoDobro {
     

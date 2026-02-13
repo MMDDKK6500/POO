@@ -1,5 +1,6 @@
-package dobro;
+package br.senac.prj.view;
 
+import br.senac.prj.model.CalculoDobro;
 import java.util.Scanner;
 
 public class Principal {
@@ -10,12 +11,12 @@ public class Principal {
         
         int x;
         
-        System.out.println("Informe um nÃºmero: ");
+        System.out.println("Informe um número: ");
         x = sc.nextInt();
         
         CalculoDobro cd = new CalculoDobro(x);
     
-        System.out.println("O dobro do nÃºmero digitado Ã©: " + cd.Dobro());
+        System.out.println("O dobro do número digitado é: " + cd.Dobro());
     }
     
 }
