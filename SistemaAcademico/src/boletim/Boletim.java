@@ -22,6 +22,10 @@ public class Boletim {
         return "Boletim{" + "nota=" + nota + ", frequencia=" + frequencia + ", status=" + status + '}';
     }
     
+    public void imprimir() {
+        System.out.printf("Nota: %f \n Frequencia: %d \n Status: %s \n", this.nota, this.frequencia, this.status);
+    }
+    
 }
 
 

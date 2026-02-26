@@ -24,7 +24,7 @@ public class Principal {
         
         Boletim B1;
         B1 = new Boletim(nota, frequencia, status);
-        System.out.println(B1.toString());
+        B1.imprimir();
         
     }
     
