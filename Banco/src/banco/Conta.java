@@ -50,7 +50,7 @@ public class Conta {
     
     public boolean sacar(double valor) {
         // Verificar se conta tem saldo e limite suficiente
-        if ((this.saldo - valor) > 0.0 || Math.abs(saldo - valor) < this.limiteConta) {
+        if ((this.saldo - valor) > 0.0 || Math.abs(this.saldo - valor) < this.limiteConta) {
             this.saldo -= valor;
             return true;
         } else {
