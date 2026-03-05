@@ -1,4 +1,4 @@
-package br.dev.mmddkk.aula4;
+package br.dev.mmddkk.aula4.model;
 
 public class Endereco {
     
