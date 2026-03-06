@@ -43,8 +43,8 @@ public class Endereco {
     public String toString() {
         String dados = "\n";
         
-        dados += logradouro + ", " + numero;
-        dados += "\nComplemento:  " +  complemento + "\nCEP: " + CEP;
+        dados += "Logradouro: " + logradouro + ", " + numero;
+        dados += "\nComplemento: " +  complemento + "\nCEP: " + CEP + "\n";
         return dados;
     }
     

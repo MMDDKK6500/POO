@@ -5,10 +5,10 @@ public class Pessoa {
     private String nome;
     private int idade;
     private char sexo;
-    private Endereco end;
+    private Endereco[] ends;
     
     public Pessoa() {
-        this.end = new Endereco();
+        this.ends = new Endereco[1];
     }
     
     public Pessoa(String nome, int idade, char sexo) {
@@ -16,15 +16,15 @@ public class Pessoa {
         this.idade = idade;
         this.sexo = sexo;
         
-        this.end = new Endereco();
+        this.ends = new Endereco[1];
     }
     
-    public Pessoa(String nome, int idade, char sexo, Endereco end) {
+    public Pessoa(String nome, int idade, char sexo, Endereco[] ends) {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
         
-        this.end = end;
+        this.ends = ends;
     }
 
     public String getNome() {
@@ -51,12 +51,12 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public Endereco getEnd() {
-        return end;
+    public Endereco[] getEnds() {
+        return ends;
     }
 
-    public void setEnd(Endereco end) {
-        this.end = end;
+    public void setEnds(Endereco[] ends) {
+        this.ends = ends;
     }
 
     @Override
@@ -64,7 +64,9 @@ public class Pessoa {
         String dados = "";
         
         dados += "Nome: " + this.nome + "\nIdade: " + this.idade + "\nSexo: " + this.sexo + "\n";
-        dados += "Endereço: " + this.end.toString();
+        for (int i = 0; i < this.ends.length; i++) {
+            dados += "Endereço #" + (i+1) + ":" + this.ends[i].toString();
+        }
         
         return dados;
     }
