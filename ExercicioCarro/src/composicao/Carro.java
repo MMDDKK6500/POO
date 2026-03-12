@@ -80,28 +80,19 @@ public class Carro {
     public String toString() {
         //return "Carro{" + "marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + ", qtdLugares=" + qtdLugares + ", ano=" + ano + ", velocidade=" + velocidade + ", peso=" + peso + ", motor=" + motor + ", bateria=" + bateria + ", portas=" + portas + '}';
         
-        return String.format("""
-               Carro: 
-               \tMarca: %s 
-               \tModelo: %s 
-               \tPlaca: %s 
-               \tQuantidade de lugares: %d 
-               \tAno de fabricação: %d 
-               \tVelocidade: %.2f 
-               \tPeso: %.2f 
-               Motor:
-               \tModelo: %s 
-               \tPotencia: %s 
-               \tFabricante: %s 
-               \tQuantidade de cilindros: %d 
-               \tVolume: %.2f 
-               Bateria:
-               \tModelo: %s 
-               \tCarga: %s 
-               \tFabricante: %s 
-               \tAno de Fabricação: %d""", marca, modelo, placa, qtdLugares, ano, velocidade, peso,
-               motor.getModelo(), motor.getPotencia(), motor.getFabricante(), motor.getQtdeCilindros(), motor.getVolume(),
-               bateria.getModelo(), bateria.getCarga(), bateria.getFabricante(), bateria.getAnoFabricacao());
+        return String.format(
+                """
+                Carro: 
+                \tMarca: %s 
+                \tModelo: %s 
+                \tPlaca: %s 
+                \tQuantidade de lugares: %d 
+                \tAno de fabrica��o: %d 
+                \tVelocidade: %.2f 
+                \tPeso: %.2f
+                %s
+                %s
+                """, marca, modelo, placa, qtdLugares, ano, velocidade, peso, motor.toString(), bateria.toString());
     }
     
     

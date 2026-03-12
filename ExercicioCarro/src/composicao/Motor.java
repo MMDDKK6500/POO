@@ -50,7 +50,15 @@ public class Motor {
 
     @Override
     public String toString() {
-        return "Motor{" + "modelo=" + modelo + ", potencia=" + potencia + ", fabricante=" + fabricante + ", qtde_cilindros=" + qtdeCilindros + ", volume=" + volume + '}';
+        return String.format(
+                """
+                Motor:
+                \tModelo: %s 
+                \tPotencia: %s 
+                \tFabricante: %s 
+                \tQuantidade de cilindros: %d 
+                \tVolume: %.2f 
+                """, getModelo(), getPotencia(), getFabricante(), getQtdeCilindros(), getVolume());
     }
     
     

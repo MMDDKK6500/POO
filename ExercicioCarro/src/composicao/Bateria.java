@@ -41,7 +41,15 @@ public class Bateria {
 
     @Override
     public String toString() {
-        return "Bateria{" + "modelo=" + modelo + ", carga=" + carga + ", fabricante=" + fabricante + ", anoFabricacao=" + anoFabricacao + '}';
+        //return "Bateria{" + "modelo=" + modelo + ", carga=" + carga + ", fabricante=" + fabricante + ", anoFabricacao=" + anoFabricacao + '}';
+        return String.format(
+                """
+                Bateria:
+                 \tModelo: %s 
+                 \tCarga: %s 
+                 \tFabricante: %s 
+                 \tAno de Fabricação: %d               
+                """, getModelo(), getCarga(), getFabricante(), getAnoFabricacao());
     }
     
     
