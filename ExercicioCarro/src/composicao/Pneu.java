@@ -32,7 +32,12 @@ public class Pneu {
 
     @Override
     public String toString() {
-        return "Pneu{" + "fabricante=" + fabricante + ", modelo=" + modelo + ", tamanho=" + tamanho + '}';
+        return String.format(
+                """
+                \tFabricante: %s
+                \tModelo: %s
+                \tTamanho: %.2f
+                """, fabricante, modelo, tamanho);
     }
     
 }

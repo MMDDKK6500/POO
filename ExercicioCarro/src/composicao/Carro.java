@@ -13,11 +13,17 @@ public class Carro {
     public Motor motor;
     public Bateria bateria;
     public Porta portas;
+    public Pneu[] pneus;
     
     public Carro() {
         this.motor = new Motor();
         this.bateria = new Bateria();
         this.portas = new Porta();
+        pneus = new Pneu[4];
+        pneus[0] = new Pneu();
+        pneus[1] = new Pneu();
+        pneus[2] = new Pneu();
+        pneus[3] = new Pneu();
     }
 
     public String getMarca() {
@@ -76,6 +82,8 @@ public class Carro {
         this.peso = peso;
     }
 
+    
+    
     @Override
     public String toString() {
         //return "Carro{" + "marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + ", qtdLugares=" + qtdLugares + ", ano=" + ano + ", velocidade=" + velocidade + ", peso=" + peso + ", motor=" + motor + ", bateria=" + bateria + ", portas=" + portas + '}';
@@ -92,9 +100,21 @@ public class Carro {
                 \tPeso: %.2f
                 %s
                 %s
-                """, marca, modelo, placa, qtdLugares, ano, velocidade, peso, motor.toString(), bateria.toString());
+                Pneus:
+                
+                %s
+                """, marca, modelo, placa, qtdLugares, ano, velocidade, peso, motor.toString(), bateria.toString(), getPneus());
     }
     
-    
+    private String getPneus() {
+        String temp = "";
+        
+        for(int i = 0; i < pneus.length; i++) {
+            temp += "Pneu #" + (i + 1) + ":\n";
+            temp += pneus[i].toString();
+        }
+        
+        return temp;
+    }
     
 }

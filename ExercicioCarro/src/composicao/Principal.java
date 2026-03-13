@@ -84,7 +84,21 @@ public class Principal {
                     System.out.println("Qual o ano de fabricação?");
                     carro.bateria.setAnoFabricacao(sc.nextInt());
                     sc.nextLine();
-
+                    
+                    for(int i = 0; i < carro.pneus.length; i++) {
+                        
+                        System.out.println("Qual o fabricante do " + (i + 1) + "º pneu?");
+                        carro.pneus[i].setFabricante(sc.nextLine());
+                        
+                        System.out.println("Qual o modelo do " + (i + 1) + "º pneu?");
+                        carro.pneus[i].setModelo(sc.nextLine());
+                        
+                        System.out.println("Qual o tamanho do " + (i + 1) + "º pneu? (em cm)");
+                        carro.pneus[i].setTamanho(sc.nextFloat());
+                        sc.nextLine();
+                        
+                    }
+                    
                     System.out.println("\n\n\t - Carro cadastrado -");
                     System.out.println(carro.toString());
                     
