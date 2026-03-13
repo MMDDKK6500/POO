@@ -19,7 +19,7 @@ public class Principal {
             escolha = sc.nextInt();
             sc.nextLine();
             
-                        switch (escolha) {
+            switch (escolha) {
 
                 case 1 -> {
                     System.out.println("\n\t - Informações do carro -");
