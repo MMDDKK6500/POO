@@ -1,5 +1,6 @@
-package composicao;
+package br.dev.mmddkk.exerciciocarro.view;
 
+import br.dev.mmddkk.exerciciocarro.model.Carro;
 import java.util.Scanner;
 
 public class Principal {

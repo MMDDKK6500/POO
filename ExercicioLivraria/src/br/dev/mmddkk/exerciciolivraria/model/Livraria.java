@@ -1,4 +1,4 @@
-package composicao;
+package br.dev.mmddkk.exerciciolivraria.model;
 
 public class Livraria {
     

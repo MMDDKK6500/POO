@@ -1,5 +1,8 @@
-package composicao;
+package br.dev.mmddkk.exerciciolivraria.view;
 
+import br.dev.mmddkk.exerciciolivraria.model.Livro;
+import br.dev.mmddkk.exerciciolivraria.model.Funcionario;
+import br.dev.mmddkk.exerciciolivraria.model.Livraria;
 import java.util.Scanner;
 
 public class Principal {

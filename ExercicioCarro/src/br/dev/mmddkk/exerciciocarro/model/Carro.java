@@ -1,4 +1,4 @@
-package composicao;
+package br.dev.mmddkk.exerciciocarro.model;
 
 public class Carro {
     
