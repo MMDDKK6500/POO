@@ -111,6 +111,8 @@ public class Principal {
                     System.out.println(carro.toString());
                     escolha = 0;
                 }
+                
+                case 3 -> System.exit(0);
 
             }
             
