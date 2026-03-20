@@ -19,20 +19,20 @@ public class PrincipalCampeonato {
         for (int i = 0; i < t.length; i++) {
             t[i] = new Time();
             
-            System.out.println("Qual o nome do " + (i + 1) +  " time?");
+            System.out.println("Qual o nome do " + (i + 1) +  "º time?");
             t[i].setNome(sc.nextLine());
             
-            System.out.println("Qual a cidade do " + (i + 1) +  " time?");
+            System.out.println("Qual a cidade do " + (i + 1) +  "º time?");
             t[i].setCidade(sc.nextLine());
             
-            System.out.println("Qual o UF do " + (i + 1) +  "time");
+            System.out.println("Qual o UF do " + (i + 1) +  "º time");
             t[i].setUf(sc.nextLine());
             
-            System.out.println("Qual o ano de fundação do " + (i + 1) +  "time");
+            System.out.println("Qual o ano de fundação do " + (i + 1) +  "º time");
             t[i].setAnoFundacao(sc.nextInt());
             sc.nextLine();
             
-            System.out.println("Quantos jogadores tem no " + (i + 1) +  "time");
+            System.out.println("Quantos jogadores tem no " + (i + 1) +  "º time");
             t[i].setQtdJogadores(sc.nextInt());
             sc.nextLine();
         }
