@@ -63,10 +63,10 @@ public class Calculadora {
                 
                     System.out.print("Qual será o segundo número: ");
                     num2 = sc.nextDouble();
-                    sc.nextLine();
                     if (num2 == 0 && escolha == 4) {
                         throw new IllegalArgumentException();
                     }
+                    sc.nextLine();
                 }
                 
             } catch (InputMismatchException e) {
